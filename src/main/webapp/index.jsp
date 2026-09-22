@@ -10,7 +10,10 @@
             It is a simple web application to demonstrate the usage of Crystal.<br/>
             This page is a simple JSP page of the 'web application'.</p>
 
-<a href="hello">Click here to access HelloServlet</a>
+<a href="hello">Click here to access HelloServlet</a><br/>
+<a href="read-object">Click here to access ReadObject</a><br/>
+<a href="test">Click here to access Test</a>
+
 <form>
     <label for="objectId">Object Id:</label>
     <input type="text" id="objectId" name="objectId"><br><br>

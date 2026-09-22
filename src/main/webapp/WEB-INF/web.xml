@@ -14,6 +14,10 @@
     <servlet-name>ReadObject</servlet-name>
     <servlet-class>com.sandc.crystal.web.servlet.ReadObject</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.sandc.crystal.web.servlet.Test</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
@@ -21,7 +25,11 @@
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>ReadObject</servlet-name>
-    <url-pattern>read-object</url-pattern>
+    <url-pattern>/read-object</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/test</url-pattern>
   </servlet-mapping>
 
 </web-app>

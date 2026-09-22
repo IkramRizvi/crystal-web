@@ -1,2 +1,3 @@
 com\sandc\crystal\web\servlet\HelloServlet.class
 com\sandc\crystal\web\servlet\ReadObject.class
+com\sandc\crystal\web\servlet\Test.class

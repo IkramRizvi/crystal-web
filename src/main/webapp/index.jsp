@@ -12,7 +12,8 @@
 
 <a href="hello">Click here to access HelloServlet</a><br/>
 <a href="read-object">Click here to access ReadObject</a><br/>
-<a href="test">Click here to access Test</a>
+<a href="test">Click here to access Test</a><br>
+<a href="test-property?property=DataSource">Click here to access TestProperty</a><br>
 
 <form>
     <label for="objectId">Object Id:</label>

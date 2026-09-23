@@ -18,6 +18,10 @@
     <servlet-name>Test</servlet-name>
     <servlet-class>com.sandc.crystal.web.servlet.Test</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>TestProperty</servlet-name>
+    <servlet-class>com.sandc.crystal.web.servlet.TestProperty</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
@@ -30,6 +34,10 @@
   <servlet-mapping>
     <servlet-name>Test</servlet-name>
     <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestProperty</servlet-name>
+    <url-pattern>/test-property</url-pattern>
   </servlet-mapping>
 
 </web-app>

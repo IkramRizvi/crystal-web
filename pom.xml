@@ -38,13 +38,21 @@
     <dependency>
       <groupId>com.sandc.crystal</groupId>
       <artifactId>base</artifactId>
-      <version>1.2-SNAPSHOT</version>
+      <version>1.5-SNAPSHOT</version>
     </dependency>
 
   </dependencies>
 
   <build>
     <finalName>web</finalName>
+
+    <resources>
+      <!-- Retain the default properties directory -->
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>

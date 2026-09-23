@@ -41,7 +41,7 @@
       <version>1.5-SNAPSHOT</version>
     </dependency>
 
-  </dependencies>
+  </dependencies> 
 
   <build>
     <finalName>web</finalName>

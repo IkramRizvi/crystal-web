@@ -26,6 +26,10 @@
     <servlet-name>TestContents</servlet-name>
     <servlet-class>com.sandc.crystal.web.servlet.TestContents</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>TestJSONResponse</servlet-name>
+    <servlet-class>com.sandc.crystal.web.servlet.TestJSONResponse</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
@@ -46,6 +50,10 @@
   <servlet-mapping>
     <servlet-name>TestContents</servlet-name>
     <url-pattern>/test-contents</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestJSONResponse</servlet-name>
+    <url-pattern>/test-JSONResponse</url-pattern>
   </servlet-mapping>
 
 </web-app>

@@ -13,8 +13,9 @@
 <a href="hello">Click here to access HelloServlet</a><br/>
 <a href="read-object">Click here to access ReadObject</a><br/>
 <a href="test">Click here to access Test</a><br>
-<a href="test-property?property=Datasource.JNDI">Click here to access TestProperty</a><br>
+<a href="test-property?property=DataSource.JNDI">Click here to access TestProperty</a><br>
 <a href="test-contents">Click here to access TestContents</a><br>
+<a href="test-JSONResponse?property=DataSource.JNDI">Click here to access test-JSONResponse</a><br>
 
 <form>
     <label for="objectId">Object Id:</label>

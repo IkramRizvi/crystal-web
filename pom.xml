@@ -29,6 +29,13 @@
     </dependency>
 
     <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20260814</version>
+        <scope>compile</scope>
+    </dependency>
+
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>

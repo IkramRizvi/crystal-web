@@ -1,5 +1,6 @@
 package com.sandc.crystal.web.servlet;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
@@ -14,7 +15,12 @@ public class TestContents extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        
+        /*
+        response.setContentType("application/json");
+         */
         response.setContentType("text/html");
+
         PrintWriter out = response.getWriter();
 
         out.println(
@@ -37,6 +43,31 @@ public class TestContents extends HttpServlet {
         }
 
         out.println("</table></body></html>");
+
+        /* 
+        response.getWriter().write(JSONObject.valueToString(jsonObject));
+        response.getWriter().flush();
+        response.getWriter().close();
+         */
+
     }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        StringBuilder requestBody = new StringBuilder();
+        String line;
+        try (BufferedReader reader = request.getReader()) {
+            while ((line = reader.readLine()) != null) {
+                requestBody.append(line).append("\n");
+            }
+        }
+
+        // Printing request body (for demonstration)
+        
+        response.setContentType("text/plain");
+        response.getWriter().write("Received POST body: \n" + requestBody.toString());
+        response.getWriter().write("Received successfully");
+   }
     
 }

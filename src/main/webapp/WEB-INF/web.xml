@@ -8,27 +8,31 @@
 
   <servlet>
     <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>com.sandc.crystal.web.servlet.HelloServlet</servlet-class>
+    <servlet-class>com.sandc.crystal.web.servlet.tests.HelloServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>ReadObject</servlet-name>
-    <servlet-class>com.sandc.crystal.web.servlet.ReadObject</servlet-class>
+    <servlet-class>com.sandc.crystal.web.servlet.tests.ReadObject</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>Test</servlet-name>
-    <servlet-class>com.sandc.crystal.web.servlet.Test</servlet-class>
+    <servlet-class>com.sandc.crystal.web.servlet.tests.Test</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>TestProperty</servlet-name>
-    <servlet-class>com.sandc.crystal.web.servlet.TestProperty</servlet-class>
+    <servlet-class>com.sandc.crystal.web.servlet.tests.TestProperty</servlet-class>
   </servlet>
     <servlet>
     <servlet-name>TestContents</servlet-name>
-    <servlet-class>com.sandc.crystal.web.servlet.TestContents</servlet-class>
+    <servlet-class>com.sandc.crystal.web.servlet.tests.TestContents</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>TestJSONResponse</servlet-name>
-    <servlet-class>com.sandc.crystal.web.servlet.TestJSONResponse</servlet-class>
+    <servlet-class>com.sandc.crystal.web.servlet.tests.TestJSONResponse</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetType</servlet-name>
+    <servlet-class>com.sandc.crystal.web.servlet.GetType</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -54,6 +58,10 @@
   <servlet-mapping>
     <servlet-name>TestJSONResponse</servlet-name>
     <url-pattern>/test-JSONResponse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetType</servlet-name>
+    <url-pattern>/getType</url-pattern>
   </servlet-mapping>
 
 </web-app>

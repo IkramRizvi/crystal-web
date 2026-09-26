@@ -1,4 +1,4 @@
-package com.sandc.crystal.web.servlet;
+package com.sandc.crystal.web.servlet.tests;
 
 import java.io.BufferedReader;
 import java.io.IOException;
